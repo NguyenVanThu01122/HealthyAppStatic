@@ -1,0 +1,38 @@
+.meal{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.meal:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.meal > img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.meal > div{
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #FFCC21;
+    color: white;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    padding: 7px 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .meal > div{
+        font-size: 10px;
+        line-height: 12px;
+        padding: 4px 8px;
+    }
+}

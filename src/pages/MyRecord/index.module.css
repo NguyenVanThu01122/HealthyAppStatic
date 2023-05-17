@@ -1,0 +1,142 @@
+.myRecord{
+    padding: 0px 11%;
+}
+/* Button to move to each entry screen */
+.groupCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    margin: 56px 0px;
+}
+/* Body fat percentage graph */
+.graph{
+  height: 35vh;
+  width: 100%;
+  padding: 0px 20px;
+}
+.groupButton{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #FFCC21;
+    letter-spacing: 0.08px;
+    font-family: "Noto Sans JP";
+    display: flex;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.groupButton > div{
+    padding: 2px 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.groupButton > div:last-child{
+    background-color: #FFCC21;
+    color: white;
+}
+/* Exercise record */
+.myExercise{
+    width: 100%;
+    background: #414141;
+    color: white;
+    padding: 16px 24px;
+    margin-bottom: 56px;
+}
+.titleExercise{
+    display: flex;
+    align-items: center;
+}
+.titleExercise > div:first-child{
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    font-family: Inter;
+}
+.titleExercise > div:last-child{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.11px;
+    font-family: Inter;
+}
+.listExercise{
+    margin-top: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 8px;
+    height: 200px;
+    overflow-y: scroll;
+    padding-right: 24px;
+}
+.listExercise::-webkit-scrollbar {
+    width: 6px;
+}
+.listExercise::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+} 
+.listExercise::-webkit-scrollbar-thumb {
+    background: #FFCC21; 
+    border-radius: 10px;
+}
+.listExercise::-webkit-scrollbar-thumb:hover {
+    background: #cc9e05; 
+}
+/* Diary  */
+.titleDiary{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.11px;
+    font-family: Inter;
+    margin-bottom: 5px;
+}
+.listDiary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+}
+/* Button show more */
+.showMoreButton{
+    margin-top: 30px;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .myRecord{
+        padding: 0px 5%;
+    }
+    .groupCard{
+        column-gap: 10px;
+    }
+    .graph{
+        padding: 0px 5px;
+    }
+    .groupButton{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .groupButton > div{
+        padding: 2px 13px;
+        margin-right: 8px;
+        border-radius: 10px; 
+    }
+    .myExercise{
+        padding: 5px 10px;
+    }
+    .listExercise{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .listDiary{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6px;
+        row-gap: 6px;
+    }
+}

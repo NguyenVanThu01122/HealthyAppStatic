@@ -1,0 +1,28 @@
+.showMoreButton{
+    background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+    width: 296px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    font-family: "Noto Sans JP";
+    cursor: pointer;
+}
+.showMoreButton:hover{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .showMoreButton{
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+    }  
+}

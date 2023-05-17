@@ -1,0 +1,98 @@
+.header{
+   background-color: #414141;
+   padding: 8px 11%;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+}
+.logo{
+   cursor: pointer;
+}
+.groupMenu{
+   display: flex;
+   width: 55%;
+   justify-content: flex-end;
+}
+.groupMenu > div{
+   margin-right: 50px;
+}
+.groupMenu > div:last-child{
+   margin-right: 0px;
+}
+.groupMenu > div:nth-child(3){
+   margin-right: 70px;
+}
+.itemMenu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 0px;
+}
+.itemMenu:hover{
+   color: #FF963C;
+   cursor: pointer;
+}
+.itemMenuActive{
+   color: #FF963C;
+}
+.itemMenu span{
+   margin-left: 8px;
+   font-weight: 300;
+   line-height: 23px;
+   font-family: "Noto Sans JP";
+}
+.iconInfo{
+   position: relative;
+}
+.notification{
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background-color: #EA6C00;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 12px;
+   position: absolute;
+   top: 0px;
+   right: -8px;
+   color: white !important;
+}
+.boxMenu{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.boxMenu > img{
+   cursor: pointer;
+}
+.menu{
+   background-color: #777777;
+   width: 280px;
+   position: absolute;
+   top: 42px;
+   right: 3px;
+   z-index: 100;
+}
+.menu > div{
+   padding: 23px 32px;
+   border-top: 1px solid #9e9e9e;
+   border-bottom: 1px solid #585858;
+   font-family: "Noto Sans JP";
+}
+.menu > div:hover{
+   color: #FF963C;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   .header{
+      padding: 5px 5%;
+   }
+   .itemMenu{
+      display: none;
+   }
+}

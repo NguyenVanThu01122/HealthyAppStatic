@@ -1,0 +1,41 @@
+.columnPage{
+    padding: 0px 11%;
+}
+/* List recommends */
+.listRecommends{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    margin: 56px 0px;
+}
+/* List cards */
+.listCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+    row-gap: 18px;
+}
+/* Button show more */
+.showMoreButton{
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .columnPage{
+        padding: 0px 5%;
+    }
+    .listRecommends{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 56px 0px;
+    }
+    .listCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}

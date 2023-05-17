@@ -1,0 +1,46 @@
+
+.itemExercise{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #777777;
+}
+.textsExercise{
+    display: flex;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 13px;
+}
+.contentExercise{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.08px;
+    font-family: "Noto Sans JP";
+}
+.kcal{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08px;
+    color: #FFCC21;
+    font-family: Inter;
+}
+.timeExercise{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.09px;
+    color: #FFCC21;
+    font-family: Inter; 
+}
+
+@media screen and (max-width: 768px) {
+    .itemExercise > *{
+        font-size: 10px;
+    }
+}

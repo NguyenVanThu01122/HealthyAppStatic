@@ -1,0 +1,30 @@
+.hex{
+    background-image: url(../../images/hex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 116px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hex{
+        width: 20vw;
+        height: 23vw;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .hex > img{
+        width: 50%;
+    }
+}

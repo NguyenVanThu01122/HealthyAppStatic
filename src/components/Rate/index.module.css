@@ -1,0 +1,31 @@
+.rate{
+    width: 35%;
+    text-shadow:  0 0 8px #FC0;
+}
+.date{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+}
+.percent{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    color: white;
+    margin-left: 4px;
+    font-family: Inter;
+}
+
+@media screen and (max-width: 768px){
+    .rate{
+        width: 50%;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .percent{
+        font-size: 16px;
+    }
+}

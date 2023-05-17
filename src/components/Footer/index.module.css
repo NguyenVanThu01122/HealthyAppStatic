@@ -1,0 +1,28 @@
+.footer{
+    background-color: #414141;
+    padding: 56px 11%; 
+    color: white;
+    display: flex;
+}
+.footer > div{
+    margin-right: 45px;
+    cursor: pointer;
+    font-family: "Noto Sans JP";
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.03px;
+}
+.footer > div:hover{
+    color: #FF963C;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        display: block;
+        padding: 10px 5%;
+    }
+    .footer > div{
+        margin-top: 5px;
+    }
+}

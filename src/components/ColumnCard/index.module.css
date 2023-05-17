@@ -1,0 +1,67 @@
+.columnCard{
+    cursor: pointer;
+}
+.image{
+    position: relative;
+    width: 100%;
+}
+.image:after{
+    content: "";
+    display: block;
+    padding-bottom: 70%;
+}
+.contentImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.contentImage > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.date{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    background:#FFCC21;
+    padding: 0px 8px;
+}
+.date > span:last-child{
+    margin-left: 13px;
+}
+.text{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.08px;
+    color: #414141;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "Noto Sans JP";
+}
+.label{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #FF963C;
+    letter-spacing: 0.06px;
+    margin-top: 4px;
+    font-family: "Noto Sans JP";
+}
+
+@media screen and (max-width: 768px) {
+    .date{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

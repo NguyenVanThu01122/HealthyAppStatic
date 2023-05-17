@@ -1,0 +1,41 @@
+.diary{
+    width: 100%;
+    position: relative;
+    border: 2px solid #707070;
+    overflow-y: auto;
+    cursor: pointer;
+}
+.diary:after{
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    padding-bottom: 27px;
+    color: #414141;
+}
+.time{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    font-family: Inter;
+    margin-bottom: 10px;
+}
+.title, .text{
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 300;
+    letter-spacing: 0.06px;
+    font-family: "Noto Sans JP";
+}
+
+@media screen and (max-width: 768px) {
+   .content{
+        padding: 5px;
+   }
+}
